@@ -1,3 +1,5 @@
+![Alt text](screenshot/react-native-dropdown.png?raw=true "Title")
+
 Usage:
 ```js
 <Dropdown
