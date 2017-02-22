@@ -46,12 +46,12 @@ export default class dropdown extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.textInputContainer}>
+        {/* <View style={styles.textInputContainer}>
           <TextInput
             style={styles.textInput}
             placeholder="Another field..."
           />
-        </View>
+        </View> */}
           <Dropdown
             placeholder="Select your favorite OS..."
             options={options}
