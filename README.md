@@ -1,34 +1,52 @@
-![Alt text](screenshot/react-native-dropdown.png?raw=true "Title")
+# react-native-dropdown
+![Alt text](screenshot/react-native-dropdown.png?raw=true "React Native Dropdown")
 
-Usage:
+### Usage
+```js
+const options = [{
+  label: 'Windows',
+  value: 'windows'
+}, {
+  label: 'OS X',
+  value: 'osx'
+}, {
+  label: 'Linux',
+  value: 'linux'
+}]
+```
+
 ```js
 <Dropdown
-  placeholder="Select your favorite OS..."
   options={options}
   value={this.state.favoriteOS}
   onChange={favoriteOS => this.setState({ favoriteOS })}
-  containerStyle={styles.dropdownContainerStyle}
-  limitDropdownOptionsOnView={4}
-  floating
-  appearence={'flat'}
-  selectedStyle={{
+
+  placeholder="Select your favorite OS..."  // optional
+  limitDropdownOptionsOnView={4} // optional
+  floating  // optional, defaults to true
+  appearence={'flat'}  // '3d' or 'flat', defaults to '3d'
+
+  containerStyle={{  // optional
+    borderColor: 'red'
+  }}
+  selectedStyle={{ // optional
     backgroundColor: 'mediumorchid'
   }}
-  textSelectedStyle={{
+  textSelectedStyle={{ // optional
     color: 'white'
   }}
-  iconSelectedStyle={{
+  iconSelectedStyle={{ // optional
     color: 'white'
   }}
 
-  optionsContainerStyle={{
+  optionsContainerStyle={{ // optional
     marginTop: 0
   }}
 
-  placeholderStyle={{
+  placeholderStyle={{ // optional
     color: 'lightgrey'
   }}
-  labelStyle={{
+  labelStyle={{ // optional
     color: 'darkgray'
   }}
 />
